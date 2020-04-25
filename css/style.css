@@ -9,6 +9,7 @@ body, html {
 }
 
 .container, h1 {
+  column-width: 800px;
   width: 80%;
   max-width: 600px;
   min-width: 400px;
@@ -47,5 +48,22 @@ img:hover {
 }
 
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
-
+.column {
+  display: inline;
+  grid-template-columns: 1fr 1fr;
+}
 /* create your tile classes! we recommend .small .med .large */
+.small {
+   width: 33%;
+   height: 33%;
+}
+
+.med {
+   width: 66%;
+   height: 66%;
+}
+
+.large {
+   width: 99%;
+   height: 99%;
+}
